@@ -9,7 +9,7 @@ export async function createOrder(req, res) {
     const body = req.body;
 
     const orderData = {
-        orderid: "",   // ← fixed field name
+        orderid: "",   
         email: req.user.email,
         name: body.name,
         address: body.address,
